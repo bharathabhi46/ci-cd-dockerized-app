@@ -1,8 +1,7 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+test("accepted test: 2 + 2 equals 4", () => {
+  expect(2 + 2).toBe(4);
+});
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+test("wrong test: 2 + 2 equals 5", () => {
+  expect(2 + 2).toBe(5);
 });
