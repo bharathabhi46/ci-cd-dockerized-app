@@ -1,7 +1,9 @@
-test("accepted test: 2 + 2 equals 4", () => {
-  expect(2 + 2).toBe(4);
+test("accepted test: hello string", () => {
+  const greeting = "hello";
+  expect(greeting).toBe("hello");
 });
 
-test("wrong test: 2 + 2 equals 5", () => {
-  expect(2 + 2).toBe(5);
+test("wrong test: hello should be world", () => {
+  const greeting = "hello";
+  expect(greeting).toBe("world");
 });
